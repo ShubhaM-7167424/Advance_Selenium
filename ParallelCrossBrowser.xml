@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test thread-count="5" parallel="tests" name="Test1">
+  <parameter name="BROWSER" value="Edge"></parameter>
+    <classes>
+      <class name="testcases.CreateCampaign"/>
+      <class name="testcases.CreateCampaignWithStatus"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" parallel="tests" name="Test2">
+   <parameter name="BROWSER" value="Chrome"></parameter>
+    <classes>
+      <class name="testcases.CreateCampaign"/>
+      <class name="testcases.CreateCampaignWithStatus"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+<!-- for this execution i have to do changes in the base class also like 
+		add parameters and then hide the BROWSER variable that gets from properties file
+-->

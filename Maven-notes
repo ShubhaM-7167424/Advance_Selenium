@@ -1,0 +1,6 @@
+1) D:
+2) cd  NOTES\ALL_VS_CODE_PROJECTS\SELENIUM_BASICS\AdvanceMorningBatch
+3) mvn validate
+4) mvn compile
+5) mvn test
+6) mvn test -P GE
